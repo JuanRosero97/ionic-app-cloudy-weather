@@ -4,7 +4,7 @@ This is a hybrid app built on Ionic that presents real-time weather information 
 
 ## Environment
 
-- url : 'https://api.openweathermap.org/data/2.5'
+- url : https://api.openweathermap.org/data/2.5
 - WEATHER_API_KEY :
 
 You need the Open Weather api key, for this you must create an account at: https://openweathermap.org/
