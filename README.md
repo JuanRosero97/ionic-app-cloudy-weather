@@ -24,7 +24,9 @@ You need the Open Weather api key, for this you must create an account at: https
 
 - Iphone XR
 
-  ![Iphone XR](https://github.com/JuanRosero97/ionic-app-cloudy-weather/blob/main/screenshots/sc1.png =250x)
+  ![Iphone XR](https://github.com/JuanRosero97/ionic-app-cloudy-weather/blob/main/screenshots/sc1.png)
+
+  <img src="https://github.com/JuanRosero97/ionic-app-cloudy-weather/blob/main/screenshots/sc1.png" width="250px"/>
 
 - Change unit of measurement
 
