@@ -14,23 +14,29 @@ You need the Open Weather api key, for this you must create an account at: https
 - Portafolio: https://juanrosero.netlify.app/
 - LinkedIn: https://www.linkedin.com/in/juan-jos%C3%A9-rosero-calder%C3%B3n-27564b203/
 
+## Videp gif
+
+- Live video
+
+  ![Live video](https://github.com/JuanRosero97/ionic-app-cloudy-weather/blob/main/screenshots/video.gif)
+
 ## Screenshots
 
 - Iphone XR
 
-  ![Iphone XR](https://github.com/JuanRosero97/ionic-app-cloudy-weather/blob/master/screenshots/sc1.png)
+  ![Iphone XR](https://github.com/JuanRosero97/ionic-app-cloudy-weather/blob/main/screenshots/sc1.png)
 
 - Change unit of measurement
 
-  ![Change unit of measurement](https://github.com/JuanRosero97/ionic-app-cloudy-weather/blob/master/screenshots/sc2.png)
+  ![Change unit of measurement](https://github.com/JuanRosero97/ionic-app-cloudy-weather/blob/main/screenshots/sc2.png)
 
 - Change Mobile #1
 
-  ![Change Mobile #1](https://github.com/JuanRosero97/ionic-app-cloudy-weather/blob/master/screenshots/sc3.png)
+  ![Change Mobile #1](https://github.com/JuanRosero97/ionic-app-cloudy-weather/blob/main/screenshots/sc3.png)
 
 - Change Mobile #2
 
-  ![Change Mobile #2](https://github.com/JuanRosero97/ionic-app-cloudy-weather/blob/master/screenshots/sc4.png)
+  ![Change Mobile #2](https://github.com/JuanRosero97/ionic-app-cloudy-weather/blob/main/screenshots/sc4.png)
 
 ## Available Scripts
 
