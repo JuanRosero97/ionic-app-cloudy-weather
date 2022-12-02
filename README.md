@@ -24,15 +24,15 @@ You need the Open Weather api key, for this you must create an account at: https
 
 - Iphone XR
 
-  ![Iphone XR](https://github.com/JuanRosero97/ionic-app-cloudy-weather/blob/main/screenshots/sc1.png) { width: 200px; }
+  ![Iphone XR](https://github.com/JuanRosero97/ionic-app-cloudy-weather/blob/main/screenshots/sc1.png =250x)
 
 - Change unit of measurement
 
-  ![Change unit of measurement](https://github.com/JuanRosero97/ionic-app-cloudy-weather/blob/main/screenshots/sc2.png) { width: 200px; }
+  ![Change unit of measurement](https://github.com/JuanRosero97/ionic-app-cloudy-weather/blob/main/screenshots/sc2.png)
 
 - Change Mobile #1 - Samsung A51
 
-  ![Change Mobile #1](https://github.com/JuanRosero97/ionic-app-cloudy-weather/blob/main/screenshots/sc3.png) { width: 200px; }
+  ![Change Mobile #1](https://github.com/JuanRosero97/ionic-app-cloudy-weather/blob/main/screenshots/sc3.png)
 
 - Change Mobile #2 - Tablet
 
