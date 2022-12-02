@@ -1,0 +1,99 @@
+<div class="ion-page" id="main-content">
+  <ion-header>
+
+    <ion-toolbar color="translucent">
+        <div class="location-header">
+          <img style ="margin-right:8px" src="../../assets/img/map.svg" alt="">
+          <span class="city-location">{{nameCity}},<span> {{country}}</span></span>
+        </div>
+        <ion-buttons class="header-btn" slot="end"><ion-menu-button color="red"> </ion-menu-button></ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- APP -->
+
+
+  <ion-content fullscreen class="ion-no-padding">
+    <ion-refresher slot="fixed" [pullFactor]="0.8" [pullMin]="100" [pullMax]="150" (ionRefresh)="handleRefresh($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+    <div class="container" [ngClass]="{'day':day,'night': !day}">
+      <ion-grid style="max-width: 550px;width: 100%;">
+        <ion-row>
+          <ion-col size="12">
+            <div class = "align-img-weather center-element"><img [src]="imgActual" alt=""></div>
+            <div class = "temp-today center-element"><span>{{ actualTemp }}°</span></div>
+            <div class="temp-min-max-today">
+              <div class = "weather-today center-element"><span>{{dataActualDay?.weather ? dataActualDay?.weather[0].description : ""}}</span></div>
+              <div class = "center-element">
+                <div class="mr-10"> <span>Max.: {{dataActualDay?.main?.temp_max}}º</span></div>
+                <div><span>Min.: {{dataActualDay?.main?.temp_min}}º</span></div>
+              </div>
+            </div>
+
+            <div class="weather-today-temp" [ngClass]="{'day':day,'night': !day}">
+              <ion-grid>
+                <ion-row>
+                  <ion-col size="6" style="text-align: left;">
+                    <span class="title-prin">{{ 'today' | translate }}</span>
+                  </ion-col>
+                  <ion-col size="6" style="text-align: right;">
+                    <span class="title-date">{{ today }}</span>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size = "12" class="weather-properties">
+                    <div class="center-element">
+                      <img src="../../assets/img/humidity.svg" alt="">
+                      <span class="item-properties-text ml-5">{{dataActualDay?.main?.humidity}} %</span>
+                    </div>
+                    <div class="center-element">
+                      <img src="../../assets/img/pression.svg" alt="">
+                      <span class="item-properties-text ml-5">{{dataActualDay?.main?.pressure}} hPa</span>
+                    </div>
+                    <div class="center-element">
+                      <img src="../../assets/img/wind.svg" alt="">
+                      <span class="item-properties-text ml-5">{{wind}} km/h</span>
+                    </div>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+
+            </div>
+
+            <div class="weather-today-temp" [ngClass]="{'day':day,'night': !day}">
+              <ion-grid>
+                <ion-row>
+                  <ion-col size="12" style="text-align: left;display: flex;justify-content: flex-start;margin-bottom: 16px;">
+                    <img src="../../assets/img/calendar.svg" alt=""><span class="title-prin"> Siguientes pronósticos</span>
+                  </ion-col>
+                </ion-row>
+
+                <ion-row style="margin-top: -35px;" *ngFor="let d of weatherDays">
+                  <ion-col size="12" class="day-container">
+                    <ion-grid>
+                      <ion-row style="align-items: center;margin-bottom: -28px;">
+                        <ion-col size="4" style="text-align:left;">
+                          <span class="title-day">{{d.fecha}}</span>
+                        </ion-col>
+                        <ion-col size="4" class="center-element">
+                          <img [src]="d.img" alt="">
+                        </ion-col>
+                        <ion-col size="4" style="text-align:right;">
+                          <span>{{d.max}}º{{units === 'metric'?'C':'F'}} <span style="opacity: 0.5;"> / {{d.min}}º{{units === 'metric'?'C':'F'}}</span></span>
+                        </ion-col>
+                      </ion-row>
+                    </ion-grid>
+                  </ion-col>
+                </ion-row>
+
+              </ion-grid>
+            </div>
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </div>
+  </ion-content>
+</div>

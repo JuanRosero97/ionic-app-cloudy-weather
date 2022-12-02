@@ -1,0 +1,7 @@
+{
+  "name": "cloudy",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,21 @@
+<ion-menu contentId="main-content" type="overlay">
+  <ion-content>
+    <ion-list style="border-bottom: none;" id="inbox-list">
+      <ion-list-header>Cloudy</ion-list-header>
+      <ion-note>Creado por: <a style="color:var(--ion-color-medium-shade)" href="https://juanrosero.netlify.app/" target="_blank">Juan Rosero</a></ion-note>
+
+      <ion-item lines="none" style="--padding-end: 0 !important;">
+        <ion-label style="white-space:unset">Unidad de temperatura</ion-label>
+        <div style="align-items: center;justify-content: space-between !important;display: flex;">
+          <span style="margin-right: -2px;">°C</span>
+          <ion-toggle class= "my-toggle" (ionChange)="check($event)"></ion-toggle>
+          <span style="margin-left: -2px;">°F</span>
+        </div>
+      </ion-item>
+      <!-- <div>
+        <!-- <ion-label>Checked Toggle</ion-label>
+        <ion-toggle class= "my-toggle" value="{{mycheck.value}}" (ionChange)="check($event)"></ion-toggle>
+      </div> -->
+    </ion-list>
+  </ion-content>
+</ion-menu>
