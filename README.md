@@ -14,7 +14,7 @@ You need the Open Weather api key, for this you must create an account at: https
 - Portafolio: https://juanrosero.netlify.app/
 - LinkedIn: https://www.linkedin.com/in/juan-jos%C3%A9-rosero-calder%C3%B3n-27564b203/
 
-## Videp gif
+## Video gif
 
 - Live video
 
